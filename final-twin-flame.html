@@ -36,6 +36,8 @@ body {
 
 h1 {
     font-size: 2rem;
+    color: #45FFCA;
+    text-shadow: 3px 3px 3px rgb(43, 38, 38);
 }
 
 h2 {
@@ -55,6 +57,8 @@ section {
     background-color: #ffc439;
     padding: 2rem;
     height: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
 }
 
@@ -160,6 +164,7 @@ section {
 
 .styled-input {
     display: grid;
+    grid-template-columns: 1fr;
 }
 
 .span {
@@ -217,13 +222,13 @@ select {
 
 
 
-.btn {
+.btnf {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
-.btn button {
+.btnf button {
     background-image: linear-gradient(80deg, #98EECC, #D0F5BE, white);
     color: black;
     text-shadow: 3px 3px 3px grey;
@@ -233,15 +238,14 @@ select {
     font-size: 1rem;
     font-weight: bold;
     font-size: 1rem;
-    /* width: 60%; */
     text-align: center;
 }
 
-.btn button:hover {
+.btnf button:hover {
     opacity: .8;
 }
 
-.btn button:active {
+.btnf button:active {
     background-image: linear-gradient(80deg, #61ebb4, #c2f5a9, white);
 }
 
@@ -554,7 +558,7 @@ summary {
             <p class="hide" id="lpText"></p>
         </details>
 
-        <div class="btn">
+        <div class="btnf">
             <button id="match">Match Now</button>
             <button id="reset">Reset</button>
         </div>
