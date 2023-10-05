@@ -25,7 +25,7 @@ body {
 .head {
     border-radius: 10px;
     box-shadow: 4px 4px 4px grey;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     font-weight: bold;
     background-image: linear-gradient(80deg, #98EECC, #D0F5BE, white);
@@ -34,8 +34,8 @@ body {
     margin-bottom: 40px;
 }
 
-h1 {
-    font-size: 2rem;
+.h1 {
+    font-size: 2.5rem;
     color: #45FFCA;
     text-shadow: 3px 3px 3px rgb(43, 38, 38);
 }
@@ -182,6 +182,8 @@ select {
     padding: .8rem;
     border-radius: 10px;
     font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -270,7 +272,7 @@ details {
     background-color: white;
 }
 
-summary {
+.sum {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
@@ -289,8 +291,8 @@ summary {
 }
 
 @media (max-width: 585px) {
-    h1 {
-        font-size: 1.4rem;
+    .h1 {
+        font-size: 1.6rem;
     }
     input {
         font-size: .8rem;
@@ -325,8 +327,8 @@ summary {
 }
 
 @media (max-width: 479px) {
-    h1 {
-        font-size: 1.2rem;
+    .h1 {
+        font-size: 1.5rem;
     }
     input {
         font-size: .6rem;
@@ -336,6 +338,8 @@ summary {
     select {
         font-size: .6rem;
         padding: .4rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
 
     .flex p {
@@ -369,7 +373,7 @@ summary {
     
     <section class="main-body">
         <div class="head">
-            <h1>Twin Flame 🔥 Twin Soul Calculator</h1>
+            <h1 class="h1">Twin Flame 🔥 Twin Soul Calculator</h1>
         </div>
     
 
@@ -551,7 +555,7 @@ summary {
         
 
         <details class="hide" id="details">
-            <summary>
+            <summary class="sum">
                 <span>Twin Flame Definition</span> <span class="border-left">Twin Flame Life Path Number</span> 
             </summary>
             <p class="hide" id="lp2Text"></p>
