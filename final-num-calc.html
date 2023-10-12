@@ -547,6 +547,10 @@ input::after {
     color: black;
 }
 
+#smallH {
+    line-height: 1
+}
+
 @media (max-width: 444px) {
     .chart{
         font-size: 1.4rem;
@@ -597,12 +601,13 @@ input::after {
     
         <form class="form" id="myForm">
             <div class="styled-input">
-                <span class="span">Current Name</span>
+                <span class="span" id="smallH">Current Name <br><span id="small">(Name Changed or Nickname)</span> </span>
                 <input type="text" id="cName" placeholder="first & last name" required>
             </div>
     
             <div class="styled-input">
-                <span class="span">Full Name at Birth</span>
+                <span class="span"  id="smallH">Full Name on Original Birth Certificate <br><span id="small">(No: Jr, III, or suffix)</span>
+                </span>
                 <input type="text" id="fName" placeholder="first, middle & last name" required>
             </div>
     
